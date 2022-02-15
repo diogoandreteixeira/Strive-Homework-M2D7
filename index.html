@@ -457,13 +457,21 @@
         /* EX11) Write a function to add a new link into the navbar*/
 
         const addLink = function(link) {
-            const navbar = document.querySelector(".nav");
-            const a = `<a class="p-2" href="#">${link}</a>`;
+            let navbar = document.querySelector(".nav");
+            let a = `<a class="p-2" href="#">${link}</a>`;
             navbar.innerHTML += a;
         }
         addLink("www.strive.school")
 
         /* EX12) Write a function to change the color of the main title */
+
+        const titleColor = function() {
+            let h1 = document.querySelector('h1')
+            h1.style.color = 'aqua'
+        }
+
+        titleColor()
+
         /*  EX13) Write a function to change the background of the jumbotron */
         /* EX14) Write a function to remove all the links under "Elsewhere" */
         /*  EX15) Write a function to change the column size for heading in jumbotron */
