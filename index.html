@@ -456,7 +456,12 @@
 
         /* EX11) Write a function to add a new link into the navbar*/
 
-
+        const addLink = function(link) {
+            const navbar = document.querySelector(".nav");
+            const a = `<a class="p-2" href="#">${link}</a>`;
+            navbar.innerHTML += a;
+        }
+        addLink("www.strive.school")
 
         /* EX12) Write a function to change the color of the main title */
         /*  EX13) Write a function to change the background of the jumbotron */
